@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  
+	<title>Form</title>
+    <meta name="description" content="Lorem ipsum">
+</head>
+<body>
+	<header>
+		<h1 id="top">Form</h1>
+	</header>
+	
+	<nav>
+		<a href="index.html">Main</a><br>
+		<a href="form.html">Form</a><br>
+		<a href="meter_mark.html">Meter mark</a><br>
+	</nav>
+
+	<section>
+		<form autocomplete="on">
+			<b>Imię:</b> 
+			<input type="text" autofocus placeholder="wpisz swoje imię"><br>
+
+			<b>Nazwisko:</b> 
+			<input type="text" required><br>
+
+			<b>Miesiąc urodzenia: </b>
+			<input list="DataUr">
+				<datalist id="DataUr">
+				<option value="Styczeń">
+				<option value="Luty">	
+				<option value="Marzec">
+				<option value="Kwieciń">	
+				<option value="Maj">	
+				<option value="Czerwiec">
+				<option value="Lipiec">
+				<option value="Sierpień">
+				<option value="Wrzssień">
+				<option value="Październik">
+				<option value="Listopad">
+				<option value="Grudzień">
+			</datalist>
+			<br>
+
+			<b>Mail: </b>
+			<input type="email" required><br>
+
+			<b>Telefon: </b>
+			<input type="tel" pattern="[0-9]{9}"><br>
+
+			<b>Płeć:</b><br>
+			<input type="radio" name="rdio" checked="checked">mężczyzna<br>
+			<input type="radio" name="rdio">kobieta<br>
+			
+			<b>Lubię:</b><br>
+			<input type="checkbox">placki
+			<input type="checkbox">naleśniki
+			<input type="checkbox">więcej placków
+			<br>
+
+			<b>Napisz coś o sobie (max 200 znaków):</b><br>
+			<textarea maxlength="200" rows="5" cols="50">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+			</textarea><br>
+
+			<b>Mój ulubiony kolor: </b>
+			<input type="color"><br>
+
+			<b>Jakaś data: </b>
+			<input type="month"><br>
+
+			<b>Moja ulubiona liczba: </b>
+			<input type="range" min="0" max="2"><br>
+
+			<b>Szukaj: </b>
+			<input type="search"><br>
+
+			<b>Moja strona: </b>
+			<input type="url"><br>
+
+			<input type="submit">
+			<input type="reset">
+		</form>
+	</section>
+</body>
+</html>

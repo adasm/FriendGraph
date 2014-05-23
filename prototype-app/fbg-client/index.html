@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Facebook Friend-Graph</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry"></script>
+    
+    <script id="erasmain" src="scripts/client.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script> -->
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <style>
+      html, body, #map-canvas {
+        margin: 0; padding: 0; height: 100%; 
+      } 
+
+      #feedback { font-size: 1.4em; }
+      #sidebar-list .ui-selecting { background: #FECA40; }
+      #sidebar-list .ui-selected { background: #F39814; color: white; }
+      #sidebar-list { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+      #sidebar-list li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+    </style>
+  </head>
+  <body>
+    <!-- fb & google maps api -->
+    <div id="fb-root" style="top: 0; left: 0; position: absolute"></div>
+    <div id="map-canvas"></div>
+
+    <!-- sidebar -->
+    <div id="sidebar" style="width: 200px; top: 0; left: 0; position: absolute; height: 100%; overflow: hidden;">
+      <div id="sidebar-scroll" style="width: 240px; overflow-y: scroll"> 
+       <ol id="sidebar-list"style="width: 200px; overflow-y: scroll"></ol>
+      </div>
+    </div>
+  </body>
+</html>
